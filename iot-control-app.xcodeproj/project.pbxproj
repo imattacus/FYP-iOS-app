@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055EAB1E630937BAF6E4A190 /* Pods_iot_control_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C9DDAB7035BB1EC1C9A17E /* Pods_iot_control_app.framework */; };
+		BD22F43C22287C4400C35D46 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F43B22287C4400C35D46 /* DeviceViewController.swift */; };
+		BD28C27222D1108B000C74E8 /* DevicesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C27022D1108B000C74E8 /* DevicesListTableViewController.swift */; };
+		BD28C27322D1108B000C74E8 /* DevicesListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD28C27122D1108B000C74E8 /* DevicesListTableViewController.xib */; };
+		BD28C27622D1114D000C74E8 /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C27422D1114D000C74E8 /* UserListTableViewController.swift */; };
+		BD28C27722D1114D000C74E8 /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD28C27522D1114D000C74E8 /* UserListTableViewController.xib */; };
+		BD28C27C22D121B1000C74E8 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C27A22D121B1000C74E8 /* AttributeTableViewCell.swift */; };
+		BD28C27D22D121B1000C74E8 /* AttributeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD28C27B22D121B1000C74E8 /* AttributeTableViewCell.xib */; };
+		BD28C28022D12369000C74E8 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C27E22D12369000C74E8 /* UserTableViewCell.swift */; };
+		BD28C28122D12369000C74E8 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD28C27F22D12369000C74E8 /* UserTableViewCell.xib */; };
+		BD28C28622D124D6000C74E8 /* AttributeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C28422D124D6000C74E8 /* AttributeListTableViewController.swift */; };
+		BD28C28722D124D6000C74E8 /* AttributeListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD28C28522D124D6000C74E8 /* AttributeListTableViewController.xib */; };
+		BD28C28922D218A6000C74E8 /* ClaimDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C28822D218A6000C74E8 /* ClaimDeviceViewController.swift */; };
+		BD28C28B22D233AE000C74E8 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C28A22D233AE000C74E8 /* CreateGroupViewController.swift */; };
+		BD28C28D22D24AEE000C74E8 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C28C22D24AEE000C74E8 /* UserDetailViewController.swift */; };
+		BD3859B7222313C700B5D776 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3859B6222313C700B5D776 /* Device.swift */; };
+		BD3859B922231A0400B5D776 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3859B822231A0400B5D776 /* DevicesViewController.swift */; };
+		BD406B41221DD81400320CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD406B40221DD81400320CBA /* AppDelegate.swift */; };
+		BD406B43221DD81400320CBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD406B42221DD81400320CBA /* ViewController.swift */; };
+		BD406B46221DD81400320CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD406B44221DD81400320CBA /* Main.storyboard */; };
+		BD406B4B221DD81600320CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD406B49221DD81600320CBA /* LaunchScreen.storyboard */; };
+		BD6FBD3E221F068500B60E74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6FBD3D221F068500B60E74 /* LoginViewController.swift */; };
+		BD6FBD40221F2DAD00B60E74 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6FBD3F221F2DAD00B60E74 /* NetworkController.swift */; };
+		BD6FBD44221F30A700B60E74 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6FBD43221F30A700B60E74 /* User.swift */; };
+		BD6FBD4622202AED00B60E74 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6FBD4522202AED00B60E74 /* UserController.swift */; };
+		BD797F5E22D74C7200C0B2E3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD797F5D22D74C7200C0B2E3 /* TabBarController.swift */; };
+		BD85151E22D6546400C4770B /* GroupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85151D22D6546400C4770B /* GroupRequest.swift */; };
+		BD85152022D6594000C4770B /* AttributeListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85151F22D6594000C4770B /* AttributeListContainer.swift */; };
+		BD85152222D6AACF00C4770B /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85152122D6AACF00C4770B /* YourProfileViewController.swift */; };
+		BD85152522D6AC6500C4770B /* GroupRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85152322D6AC6500C4770B /* GroupRequestTableViewController.swift */; };
+		BD85152622D6AC6500C4770B /* GroupRequestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD85152422D6AC6500C4770B /* GroupRequestTableViewController.xib */; };
+		BD85152922D6AC7D00C4770B /* GroupRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85152722D6AC7D00C4770B /* GroupRequestTableViewCell.swift */; };
+		BD85152A22D6AC7D00C4770B /* GroupRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD85152822D6AC7D00C4770B /* GroupRequestTableViewCell.xib */; };
+		BDBC0C8B22CE81CB005BFE2A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C8A22CE81CB005BFE2A /* SignupViewController.swift */; };
+		BDBC0C8D22CF9F33005BFE2A /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C8C22CF9F33005BFE2A /* GroupsViewController.swift */; };
+		BDBC0C8F22CFC99C005BFE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBC0C8E22CFC99C005BFE2A /* Assets.xcassets */; };
+		BDBC0C9122CFD731005BFE2A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C9022CFD731005BFE2A /* Group.swift */; };
+		BDBC0C9322D0F6C3005BFE2A /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C9222D0F6C3005BFE2A /* GroupDetailViewController.swift */; };
+		BDBC0C9522D10100005BFE2A /* GroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C9422D10100005BFE2A /* GroupController.swift */; };
+		BDBC0C9722D106A5005BFE2A /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBC0C9622D106A5005BFE2A /* Attribute.swift */; };
+		BDC5199A22D4AE9E00D1B11D /* GroupAddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5199922D4AE9E00D1B11D /* GroupAddDeviceViewController.swift */; };
+		BDC5199C22D4D5DA00D1B11D /* GroupAddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5199B22D4D5DA00D1B11D /* GroupAddUserViewController.swift */; };
+		BDC5199E22D4E0D400D1B11D /* EditAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5199D22D4E0D400D1B11D /* EditAttributeViewController.swift */; };
+		BDE03E7A22D36B140084652A /* UserListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE03E7922D36B140084652A /* UserListContainer.swift */; };
+		BDE03E7D22D38BBB0084652A /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE03E7B22D38BBB0084652A /* DeviceTableViewCell.swift */; };
+		BDE03E7E22D38BBB0084652A /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE03E7C22D38BBB0084652A /* DeviceTableViewCell.xib */; };
+		BDE03E8022D38EFE0084652A /* DeviceListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE03E7F22D38EFE0084652A /* DeviceListContainer.swift */; };
+		BDE03E8222D3B59C0084652A /* CreateAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE03E8122D3B59C0084652A /* CreateAttributeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0322B9F9A73C79E1D41E6AA0 /* Pods-iot-control-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-control-app.debug.xcconfig"; path = "Target Support Files/Pods-iot-control-app/Pods-iot-control-app.debug.xcconfig"; sourceTree = "<group>"; };
+		2E9BEA853A1F29546D355AD6 /* Pods-iot-control-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-control-app.release.xcconfig"; path = "Target Support Files/Pods-iot-control-app/Pods-iot-control-app.release.xcconfig"; sourceTree = "<group>"; };
+		38C9DDAB7035BB1EC1C9A17E /* Pods_iot_control_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_control_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD22F43B22287C4400C35D46 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		BD28C27022D1108B000C74E8 /* DevicesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListTableViewController.swift; sourceTree = "<group>"; };
+		BD28C27122D1108B000C74E8 /* DevicesListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesListTableViewController.xib; sourceTree = "<group>"; };
+		BD28C27422D1114D000C74E8 /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		BD28C27522D1114D000C74E8 /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
+		BD28C27A22D121B1000C74E8 /* AttributeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeTableViewCell.swift; sourceTree = "<group>"; };
+		BD28C27B22D121B1000C74E8 /* AttributeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeTableViewCell.xib; sourceTree = "<group>"; };
+		BD28C27E22D12369000C74E8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		BD28C27F22D12369000C74E8 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		BD28C28422D124D6000C74E8 /* AttributeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeListTableViewController.swift; sourceTree = "<group>"; };
+		BD28C28522D124D6000C74E8 /* AttributeListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeListTableViewController.xib; sourceTree = "<group>"; };
+		BD28C28822D218A6000C74E8 /* ClaimDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDeviceViewController.swift; sourceTree = "<group>"; };
+		BD28C28A22D233AE000C74E8 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		BD28C28C22D24AEE000C74E8 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		BD3859B6222313C700B5D776 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		BD3859B822231A0400B5D776 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		BD406B3D221DD81400320CBA /* iot-control-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iot-control-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD406B40221DD81400320CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD406B42221DD81400320CBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD406B45221DD81400320CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD406B4A221DD81600320CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD406B4C221DD81600320CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6FBD3D221F068500B60E74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BD6FBD3F221F2DAD00B60E74 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		BD6FBD43221F30A700B60E74 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD6FBD4522202AED00B60E74 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		BD797F5D22D74C7200C0B2E3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BD85151D22D6546400C4770B /* GroupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequest.swift; sourceTree = "<group>"; };
+		BD85151F22D6594000C4770B /* AttributeListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeListContainer.swift; sourceTree = "<group>"; };
+		BD85152122D6AACF00C4770B /* YourProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
+		BD85152322D6AC6500C4770B /* GroupRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequestTableViewController.swift; sourceTree = "<group>"; };
+		BD85152422D6AC6500C4770B /* GroupRequestTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupRequestTableViewController.xib; sourceTree = "<group>"; };
+		BD85152722D6AC7D00C4770B /* GroupRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequestTableViewCell.swift; sourceTree = "<group>"; };
+		BD85152822D6AC7D00C4770B /* GroupRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupRequestTableViewCell.xib; sourceTree = "<group>"; };
+		BDBC0C8A22CE81CB005BFE2A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BDBC0C8C22CF9F33005BFE2A /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		BDBC0C8E22CFC99C005BFE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDBC0C9022CFD731005BFE2A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		BDBC0C9222D0F6C3005BFE2A /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
+		BDBC0C9422D10100005BFE2A /* GroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupController.swift; sourceTree = "<group>"; };
+		BDBC0C9622D106A5005BFE2A /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		BDC5199922D4AE9E00D1B11D /* GroupAddDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddDeviceViewController.swift; sourceTree = "<group>"; };
+		BDC5199B22D4D5DA00D1B11D /* GroupAddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddUserViewController.swift; sourceTree = "<group>"; };
+		BDC5199D22D4E0D400D1B11D /* EditAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAttributeViewController.swift; sourceTree = "<group>"; };
+		BDE03E7922D36B140084652A /* UserListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListContainer.swift; sourceTree = "<group>"; };
+		BDE03E7B22D38BBB0084652A /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		BDE03E7C22D38BBB0084652A /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
+		BDE03E7F22D38EFE0084652A /* DeviceListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListContainer.swift; sourceTree = "<group>"; };
+		BDE03E8122D3B59C0084652A /* CreateAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAttributeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD406B3A221DD81400320CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055EAB1E630937BAF6E4A190 /* Pods_iot_control_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BAE185B6076A950869EC26F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0322B9F9A73C79E1D41E6AA0 /* Pods-iot-control-app.debug.xcconfig */,
+				2E9BEA853A1F29546D355AD6 /* Pods-iot-control-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD406B34221DD81400320CBA = {
+			isa = PBXGroup;
+			children = (
+				BD406B3F221DD81400320CBA /* iot-control-app */,
+				BD406B3E221DD81400320CBA /* Products */,
+				2BAE185B6076A950869EC26F /* Pods */,
+				D5BA1FEC1FF0B3B34BDF0A51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD406B3E221DD81400320CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD406B3D221DD81400320CBA /* iot-control-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD406B3F221DD81400320CBA /* iot-control-app */ = {
+			isa = PBXGroup;
+			children = (
+				BDE03E7822D36B080084652A /* Protocols */,
+				BD6FBD42221F309300B60E74 /* Views */,
+				BD6FBD41221F308600B60E74 /* Models */,
+				BD406B40221DD81400320CBA /* AppDelegate.swift */,
+				BD406B42221DD81400320CBA /* ViewController.swift */,
+				BD406B44221DD81400320CBA /* Main.storyboard */,
+				BD406B49221DD81600320CBA /* LaunchScreen.storyboard */,
+				BD406B4C221DD81600320CBA /* Info.plist */,
+				BDBC0C8E22CFC99C005BFE2A /* Assets.xcassets */,
+				BD6FBD3D221F068500B60E74 /* LoginViewController.swift */,
+				BD6FBD3F221F2DAD00B60E74 /* NetworkController.swift */,
+				BD6FBD4522202AED00B60E74 /* UserController.swift */,
+				BD3859B822231A0400B5D776 /* DevicesViewController.swift */,
+				BD22F43B22287C4400C35D46 /* DeviceViewController.swift */,
+				BDBC0C8A22CE81CB005BFE2A /* SignupViewController.swift */,
+				BDBC0C8C22CF9F33005BFE2A /* GroupsViewController.swift */,
+				BDBC0C9222D0F6C3005BFE2A /* GroupDetailViewController.swift */,
+				BDBC0C9422D10100005BFE2A /* GroupController.swift */,
+				BD28C28822D218A6000C74E8 /* ClaimDeviceViewController.swift */,
+				BD28C28A22D233AE000C74E8 /* CreateGroupViewController.swift */,
+				BD28C28C22D24AEE000C74E8 /* UserDetailViewController.swift */,
+				BDE03E8122D3B59C0084652A /* CreateAttributeViewController.swift */,
+				BDC5199922D4AE9E00D1B11D /* GroupAddDeviceViewController.swift */,
+				BDC5199B22D4D5DA00D1B11D /* GroupAddUserViewController.swift */,
+				BDC5199D22D4E0D400D1B11D /* EditAttributeViewController.swift */,
+				BD85152122D6AACF00C4770B /* YourProfileViewController.swift */,
+			);
+			path = "iot-control-app";
+			sourceTree = "<group>";
+		};
+		BD6FBD41221F308600B60E74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD6FBD43221F30A700B60E74 /* User.swift */,
+				BD3859B6222313C700B5D776 /* Device.swift */,
+				BDBC0C9022CFD731005BFE2A /* Group.swift */,
+				BDBC0C9622D106A5005BFE2A /* Attribute.swift */,
+				BD85151D22D6546400C4770B /* GroupRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD6FBD42221F309300B60E74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD28C27022D1108B000C74E8 /* DevicesListTableViewController.swift */,
+				BD28C27122D1108B000C74E8 /* DevicesListTableViewController.xib */,
+				BD28C27422D1114D000C74E8 /* UserListTableViewController.swift */,
+				BD28C27522D1114D000C74E8 /* UserListTableViewController.xib */,
+				BD28C27A22D121B1000C74E8 /* AttributeTableViewCell.swift */,
+				BD28C27B22D121B1000C74E8 /* AttributeTableViewCell.xib */,
+				BD28C27E22D12369000C74E8 /* UserTableViewCell.swift */,
+				BD28C27F22D12369000C74E8 /* UserTableViewCell.xib */,
+				BD28C28422D124D6000C74E8 /* AttributeListTableViewController.swift */,
+				BD28C28522D124D6000C74E8 /* AttributeListTableViewController.xib */,
+				BDE03E7B22D38BBB0084652A /* DeviceTableViewCell.swift */,
+				BDE03E7C22D38BBB0084652A /* DeviceTableViewCell.xib */,
+				BD85152322D6AC6500C4770B /* GroupRequestTableViewController.swift */,
+				BD85152422D6AC6500C4770B /* GroupRequestTableViewController.xib */,
+				BD85152722D6AC7D00C4770B /* GroupRequestTableViewCell.swift */,
+				BD85152822D6AC7D00C4770B /* GroupRequestTableViewCell.xib */,
+				BD797F5D22D74C7200C0B2E3 /* TabBarController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDE03E7822D36B080084652A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BDE03E7922D36B140084652A /* UserListContainer.swift */,
+				BDE03E7F22D38EFE0084652A /* DeviceListContainer.swift */,
+				BD85151F22D6594000C4770B /* AttributeListContainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D5BA1FEC1FF0B3B34BDF0A51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C9DDAB7035BB1EC1C9A17E /* Pods_iot_control_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD406B3C221DD81400320CBA /* iot-control-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD406B4F221DD81600320CBA /* Build configuration list for PBXNativeTarget "iot-control-app" */;
+			buildPhases = (
+				C0D352A889FF69F08F73B15C /* [CP] Check Pods Manifest.lock */,
+				BD406B39221DD81400320CBA /* Sources */,
+				BD406B3A221DD81400320CBA /* Frameworks */,
+				BD406B3B221DD81400320CBA /* Resources */,
+				251FC200ABA09EBDB87A45FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iot-control-app";
+			productName = "iot-control-app";
+			productReference = BD406B3D221DD81400320CBA /* iot-control-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD406B35221DD81400320CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Matt Callaway";
+				TargetAttributes = {
+					BD406B3C221DD81400320CBA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BD406B38221DD81400320CBA /* Build configuration list for PBXProject "iot-control-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD406B34221DD81400320CBA;
+			productRefGroup = BD406B3E221DD81400320CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD406B3C221DD81400320CBA /* iot-control-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD406B3B221DD81400320CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD28C27D22D121B1000C74E8 /* AttributeTableViewCell.xib in Resources */,
+				BDE03E7E22D38BBB0084652A /* DeviceTableViewCell.xib in Resources */,
+				BD406B4B221DD81600320CBA /* LaunchScreen.storyboard in Resources */,
+				BD85152A22D6AC7D00C4770B /* GroupRequestTableViewCell.xib in Resources */,
+				BD28C27322D1108B000C74E8 /* DevicesListTableViewController.xib in Resources */,
+				BD28C28122D12369000C74E8 /* UserTableViewCell.xib in Resources */,
+				BD28C28722D124D6000C74E8 /* AttributeListTableViewController.xib in Resources */,
+				BDBC0C8F22CFC99C005BFE2A /* Assets.xcassets in Resources */,
+				BD85152622D6AC6500C4770B /* GroupRequestTableViewController.xib in Resources */,
+				BD406B46221DD81400320CBA /* Main.storyboard in Resources */,
+				BD28C27722D1114D000C74E8 /* UserListTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		251FC200ABA09EBDB87A45FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iot-control-app/Pods-iot-control-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iot-control-app/Pods-iot-control-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iot-control-app/Pods-iot-control-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D352A889FF69F08F73B15C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iot-control-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD406B39221DD81400320CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE03E7D22D38BBB0084652A /* DeviceTableViewCell.swift in Sources */,
+				BDBC0C9722D106A5005BFE2A /* Attribute.swift in Sources */,
+				BD28C28922D218A6000C74E8 /* ClaimDeviceViewController.swift in Sources */,
+				BD6FBD4622202AED00B60E74 /* UserController.swift in Sources */,
+				BD28C27C22D121B1000C74E8 /* AttributeTableViewCell.swift in Sources */,
+				BDE03E8222D3B59C0084652A /* CreateAttributeViewController.swift in Sources */,
+				BD6FBD40221F2DAD00B60E74 /* NetworkController.swift in Sources */,
+				BD28C28622D124D6000C74E8 /* AttributeListTableViewController.swift in Sources */,
+				BDBC0C8B22CE81CB005BFE2A /* SignupViewController.swift in Sources */,
+				BDC5199E22D4E0D400D1B11D /* EditAttributeViewController.swift in Sources */,
+				BD85152022D6594000C4770B /* AttributeListContainer.swift in Sources */,
+				BDBC0C9122CFD731005BFE2A /* Group.swift in Sources */,
+				BD85151E22D6546400C4770B /* GroupRequest.swift in Sources */,
+				BDC5199A22D4AE9E00D1B11D /* GroupAddDeviceViewController.swift in Sources */,
+				BD28C28D22D24AEE000C74E8 /* UserDetailViewController.swift in Sources */,
+				BD28C28B22D233AE000C74E8 /* CreateGroupViewController.swift in Sources */,
+				BD28C27222D1108B000C74E8 /* DevicesListTableViewController.swift in Sources */,
+				BDBC0C9322D0F6C3005BFE2A /* GroupDetailViewController.swift in Sources */,
+				BDE03E8022D38EFE0084652A /* DeviceListContainer.swift in Sources */,
+				BD22F43C22287C4400C35D46 /* DeviceViewController.swift in Sources */,
+				BDC5199C22D4D5DA00D1B11D /* GroupAddUserViewController.swift in Sources */,
+				BD797F5E22D74C7200C0B2E3 /* TabBarController.swift in Sources */,
+				BD85152222D6AACF00C4770B /* YourProfileViewController.swift in Sources */,
+				BDE03E7A22D36B140084652A /* UserListContainer.swift in Sources */,
+				BD6FBD3E221F068500B60E74 /* LoginViewController.swift in Sources */,
+				BDBC0C8D22CF9F33005BFE2A /* GroupsViewController.swift in Sources */,
+				BD406B43221DD81400320CBA /* ViewController.swift in Sources */,
+				BD28C28022D12369000C74E8 /* UserTableViewCell.swift in Sources */,
+				BDBC0C9522D10100005BFE2A /* GroupController.swift in Sources */,
+				BD28C27622D1114D000C74E8 /* UserListTableViewController.swift in Sources */,
+				BD6FBD44221F30A700B60E74 /* User.swift in Sources */,
+				BD406B41221DD81400320CBA /* AppDelegate.swift in Sources */,
+				BD3859B922231A0400B5D776 /* DevicesViewController.swift in Sources */,
+				BD85152922D6AC7D00C4770B /* GroupRequestTableViewCell.swift in Sources */,
+				BD3859B7222313C700B5D776 /* Device.swift in Sources */,
+				BD85152522D6AC6500C4770B /* GroupRequestTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD406B44221DD81400320CBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD406B45221DD81400320CBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD406B49221DD81600320CBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD406B4A221DD81600320CBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD406B4D221DD81600320CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD406B4E221DD81600320CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD406B50221DD81600320CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0322B9F9A73C79E1D41E6AA0 /* Pods-iot-control-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25D2C5QN9D;
+				INFOPLIST_FILE = "iot-control-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattcallaway.iot-control-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD406B51221DD81600320CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9BEA853A1F29546D355AD6 /* Pods-iot-control-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25D2C5QN9D;
+				INFOPLIST_FILE = "iot-control-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattcallaway.iot-control-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD406B38221DD81400320CBA /* Build configuration list for PBXProject "iot-control-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD406B4D221DD81600320CBA /* Debug */,
+				BD406B4E221DD81600320CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD406B4F221DD81600320CBA /* Build configuration list for PBXNativeTarget "iot-control-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD406B50221DD81600320CBA /* Debug */,
+				BD406B51221DD81600320CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD406B35221DD81400320CBA /* Project object */;
+}
